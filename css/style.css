@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+
+.grilla {
+  background-color: #F9E0B7;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+.navbar-nav li a:hover {
+  background-color: #b9a897;
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.header {
+  grid-area: header;
+  background-color: #E5BD83;
+  background-size: auto;
+  padding: 1.5rem;
+}
+
+.titulo
+{
+  font-size: 6rem;
+  background-color: #28120D;
+  text-align: center;
+  padding: 4rem;
+  color: #E5BD83;
+}
+
+/* MAIN */
+
+.main {
+  grid-area: main;
+  background-color: #F9E0B7;
+}
+
+.main h2 {
+  font-size: 2rem;
+  background-color: #CC8C52;
+  text-align: center;
+  padding: 2rem;
+  animation: move 3s ease-in-out; 
+
+}
+
+.textomain{
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+
+.maindemuebles{
+  grid-area: main;
+  background-color: #F9E0B7;
+}
+
+/* CONTENEDOR DE LAS IMAGENES DE MAIN */
+
+.separator {
+  font-size: 2rem;
+  text-align: left;
+  background-color: #d6a77b;
+  padding: 0.5rem;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.contenedordeimg{
+  display: grid;
+  grid-template-columns:50% 50%;
+  justify-content: space-evenly;
+}
+
+.contenedordepagos{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 60%;
+  align-items: center;
+}
+
+.img-container {
+  max-width: 100%;
+  padding: 2rem;
+  border-radius: 50px;
+  
+}
+
+/* FOOTER */
+
+.footer {
+  grid-area: footer;
+  background-color: #E5BD83;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  animation: move 3s ease-in-out;
+
+}
+
+.lorem {
+  font-size: 1rem;
+}
+
+.redes{
+  padding: 1rem;
+ 
+}
+
+/* WHATSAPP BOTON FLOTANTE */
+.wsp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.wsp:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color:#fff;
+}
+
+.my-wsp{
+  margin-top:16px;
+}
+
+
+/* FORMULARIO */
+.formulario{
+  background: url(../ProyectoHtml/silla.jpeg) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0 auto; /* Centramos el formulario */
+  max-height: 5fr;
+  width: 70%;   /* Sin ancho no podemos centrar el formulario */
+  background-color: white; /* Color blanco para el formulario */
+  padding: 2rem; /* separamos los bordes del form del resto de elementos */
+  border-radius: 0.5rem; /* Redondeamos los bordes del form */
+  text-align: center;
+  align-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  
+}
+
+input, textarea {
+  padding: 2px; /* Separamos la letra del interior (contenido) en los inputs de los bordes */
+}
+
+label {
+  display: block; /* Ahora los inputs quedan debajo de los label */
+  padding: 2px; /* Separando espacios internos */
+}
+
+/* TRANSICIÓN FORMULARIO */
+.formulario :hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+/* ANIMACIONES - KEYFRAMES */
+@keyframes move {
+  0% {
+    transform: translate(-30%);
+  }
+  50% {
+    text-shadow: 0 25px 50px #E5BD83;
+  }
+}
+  
+
+
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+
+/* MOBILE LAST  = MAX-WIDTH*/
+@media (max-width:768px) {
+
+  .contenedordeimg{
+    display:flex;
+    flex-direction: column;
+    padding: 2;
+    margin-left: 2rem;
+  }
+}
+
+/* Dispositivos chicos // SM */
+@media (max-width:600px) {
+
+  .contenedor{
+    display:flex;
+    flex-direction: column;
+    padding: 2;
+    margin-left: 2rem;
+  }
+
+  .titulo{
+  font-size: 5rem;
+  text-align: center;
+  padding: 3rem;}
+  
+
+.textomain{
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: left;
+}
+  
+}
