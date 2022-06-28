@@ -1,0 +1,25 @@
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    background-color: #E5BD83;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    animation: move 3s ease-in-out;
+  
+  }
+  
+  .lorem {
+    font-size: 1rem;
+  }
+  
+  .redes {
+    padding: 1rem;
+  
+  }

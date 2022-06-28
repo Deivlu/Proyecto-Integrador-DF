@@ -1,0 +1,35 @@
+  /* HEADER */
+  
+  .grilla {
+    background-color: #F9E0B7;
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+  }
+  .navbar-nav li a:hover {
+    background-color: #b9a897;
+    transform: scale(1.05);
+    transition: 1s;
+  }
+
+  .nav-item:active{
+    font-weight: bold;
+  }
+
+  .header {
+    grid-area: header;
+    background-color: #E5BD83;
+    background-size: auto;
+    padding: 1.5rem;
+  }
+  
+  .titulo
+  {
+    font-size: 6rem;
+    background-color: #28120D;
+    text-align: center;
+    padding: 4rem;
+    color: #E5BD83;
+  }

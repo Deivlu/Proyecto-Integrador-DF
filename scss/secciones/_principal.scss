@@ -1,0 +1,98 @@
+/* MAIN */
+  
+.main {
+    grid-area: main;
+    background-color: #F9E0B7;
+  }
+  
+  .main h2 {
+    font-size: 2rem;
+    background-color: #CC8C52;
+    text-align: center;
+    padding: 2rem;
+    animation: move 3s ease-in-out; 
+  
+  }
+  
+  .textomain{
+    padding: 1rem;
+    p{
+      @extend %estiloParrafo;
+    }
+  }
+  
+  
+  .maindemuebles{
+    grid-area: main;
+    background-color: #F9E0B7;
+  }
+  
+  /* CONTENEDOR DE LAS IMAGENES DE MAIN */
+
+.separator {
+  font-size: 2rem;
+  text-align: left;
+  background-color: #d6a77b;
+  padding: 0.5rem;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.contenedordeimg {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-evenly;
+}
+
+.contenedordepagos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 60%;
+  align-items: center;
+}
+
+.img-container {
+  max-width: 100%;
+  padding: 2rem;
+  border-radius: 50px;
+}
+
+  
+  
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+
+/* MOBILE LAST  = MAX-WIDTH*/
+@media (max-width:768px) {
+
+  .contenedordeimg {
+    display: flex;
+    flex-direction: column;
+    padding: 2;
+    margin-left: 2rem;
+  }
+}
+
+/* Dispositivos chicos // SM */
+@media (max-width:600px) {
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 2;
+    margin-left: 2rem;
+  }
+
+  .titulo {
+    font-size: 5rem;
+    text-align: center;
+    padding: 3rem;
+  }
+
+
+  .textomain {
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+}

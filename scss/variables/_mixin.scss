@@ -1,0 +1,6 @@
+@mixin btnForm ($colorfondo, $colorletra){
+    padding: 0.5rem;
+    background-color: $colorfondo;
+    color: $colorletra;
+    margin-bottom: 32px;
+}

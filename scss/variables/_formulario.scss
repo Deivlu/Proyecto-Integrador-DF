@@ -1,0 +1,56 @@
+/* FORMULARIO */
+.formulario {
+  background: url(../ProyectoHtml/silla.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0 auto;
+  /* Centramos el formulario */
+  max-height: 5fr;
+  width: 70%;
+  /* Sin ancho no podemos centrar el formulario */
+  /* Color blanco para el formulario */
+  padding: 2rem;
+  /* separamos los bordes del form del resto de elementos */
+  border-radius: 0.5rem;
+  /* Redondeamos los bordes del form */
+  text-align: center;
+  align-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+input textarea {
+    padding: 2px;
+    /* Separamos la letra del interior (contenido) en los inputs de los bordes */
+  }
+
+  label {
+    display: block;
+    /* Ahora los inputs quedan debajo de los label */
+    padding: 2px;
+    /* Separando espacios internos */
+  }
+
+.btn {
+  @include btnForm (white, black)
+}
+
+/* TRANSICIÓN FORMULARIO */
+.formulario :hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+/* ANIMACIONES - KEYFRAMES */
+@keyframes move {
+  0% {
+    transform: translate(-30%);
+  }
+
+  50% {
+    text-shadow: 0 25px 50px #E5BD83;
+  }
+}
