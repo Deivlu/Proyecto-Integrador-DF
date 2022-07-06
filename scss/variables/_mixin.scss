@@ -4,3 +4,9 @@
     color: $colorletra;
     margin-bottom: 32px;
 }
+
+@mixin cards{
+    width:100%;
+    height:400px;  
+}
+

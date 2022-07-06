@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="keywords" content="Muebles, sommiers, mdf, DFmuebles, hogar, interior">
     <meta name="description" content="Muebles a tu medida, fabricados en mdf con la mejor calidad">
-    <link rel="shortcut icon" href="./ProyectoHtml/dfisologo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./ProyectoHtml/dfisologo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/2b7d7473aa.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +24,9 @@
         <header class="header">
             <!-- Menú de navegación -->
             <div>
-                <h1 class="titulo">DF MUEBLES</h1>
+                <a href="./index.html"><img src="./ProyectoHtml/DFnombre.jpg" class="banner"></a>
             </div>
+
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -52,6 +53,7 @@
                         </ul>
                     </div>
                 </div>
+
             </nav>
 
         </header>
@@ -62,15 +64,44 @@
             </div>
             <div class="separator">Novedades</div>
             <div class="textomain">
-                <p>Encontrá lo que necesitás para tu hogar.</p>
+                <p>ENCONTRA LO QUE NECESITAS PARA TU HOGAR</p>
             </div>
-            <div class="contenedordeimg">
-
-                <img src="./ProyectoHtml/Cajon.jpg" alt="Cajon Sommier" class="img-container">
-
-                <img src="./ProyectoHtml/publiVolvemos.jpg" alt="Proceso de armado" class="img-container">
-
+            <div class="row justify-content-sm-center m-3" >
+                <div class="col-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./ProyectoHtml/publiVolvemos.jpg" class="d-block w-100" alt="Volvemos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./ProyectoHtml/Volvemos2.jpg" class="d-block w-100" alt="Volvemos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./ProyectoHtml/hotsale.jpg" class="d-block w-100" alt="Hotsale">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
+
         </main>
         <footer class="footer">
             <div>
@@ -91,9 +122,9 @@
                 </a>
             </div>
             <div>
-                <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quisquam voluptatem
-                    aspernatur repudiandae expedita obcaecati! Deserunt aliquam consectetur recusandae voluptatum error
-                    magni, cumque velit labore placeat aspernatur laborum repellendus dolorum.</p>
+                <p class="lorem">Somos DF-Muebles! Fabricamos muebles a tu medida con madera MDF de excelente calidad,
+                    con una terminación atractiva para decorar tu hogar y que puedas lograr un ambiente armonioso. Te
+                    ofrecemos productos exclusivos y al mejor precio.</p>
             </div>
         </footer>
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="keywords" content="Dfmuebles, corrientes, argentina">
     <meta name="description" content="Contactanos para realizar tu pedido">
-    <link rel="shortcut icon" href="./ProyectoHtml/dfisologo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../ProyectoHtml/dfisologo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/2b7d7473aa.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
         <header class="header">
             <!-- Menú de navegación -->
             <div>
-                <h1 class="titulo">DF MUEBLES</h1>
+                <a href="../index.html"><img src="../ProyectoHtml/DFnombre.jpg" class="banner"></a>
             </div>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -54,21 +54,30 @@
             </nav>
 
         </header>
-        <main class="main">
-            <form class="formulario" action="#" method="post">
-                <div class="separator">
-                    <p>Rellena el formulario</p>
-                </div>
-                <label for="name">Nombre y apellido</label>
-                <input type="text" placeholder="Nombre completo">
-                <label for="email">Mail</label>
-                <input type="email" placeholder="example@gmail.com">
-                <label for="sugerencias">Sugerencias</label>
-                <textarea>
+        <main class="mainDeContacto">
+            <div class="contenedorDeContacto">
+                <form class="formulario" action="#" method="post">
+                    <div class="separator">
+                        <p>Rellena el formulario</p>
+                    </div>
+                    <label for="name">Nombre y apellido</label>
+                    <input type="text" placeholder="Nombre completo">
+                    <label for="email">Mail</label>
+                    <input type="email" placeholder="example@gmail.com">
+                    <label for="sugerencias">Sugerencias</label>
+                    <textarea>
                 </textarea>
-                <input class="btn" type="submit">
+                    <input class="btn" type="submit">
+                </form>
+                <div class="textoMap">
+                    <p>Tambien nos podes encontrar en nuestro taller</p>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1769.9848828329245!2d-58.84519671652598!3d-27.47020061509324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456cbc74581e63%3A0x36e30f467345656e!2sRapiflet!5e0!3m2!1ses-419!2sar!4v1656893424168!5m2!1ses-419!2sar"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
 
-            </form>
         </main>
 
 
@@ -92,9 +101,9 @@
                 </a>
             </div>
             <div>
-                <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quisquam voluptatem
-                    aspernatur repudiandae expedita obcaecati! Deserunt aliquam consectetur recusandae voluptatum error
-                    magni, cumque velit labore placeat aspernatur laborum repellendus dolorum.</p>
+                <p class="lorem">Somos DF-Muebles! Fabricamos muebles a tu medida con madera MDF de excelente calidad,
+                    con una terminación atractiva para decorar tu hogar y que puedas lograr un ambiente armonioso. Te
+                    ofrecemos productos exclusivos y al mejor precio.</p>
             </div>
         </footer>
 

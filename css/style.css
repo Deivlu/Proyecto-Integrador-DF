@@ -5,7 +5,7 @@
   font-family: 'Roboto', sans-serif; }
 
 /* Variables */
-.textomain p {
+.textoMap p, .textomain p {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -34,9 +34,17 @@
 .my-wsp {
   margin-top: 16px; }
 
+.mainDeContacto {
+  grid-area: main; }
+
+.contenedorDeContacto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-evenly; }
+
 /* FORMULARIO */
 .formulario {
-  background: url(../ProyectoHtml/silla.jpeg) no-repeat center center;
+  background: url(/ProyectoHtml/silla.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -44,7 +52,7 @@
   margin: 0 auto;
   /* Centramos el formulario */
   max-height: 5fr;
-  width: 70%;
+  max-width: 80%;
   /* Sin ancho no podemos centrar el formulario */
   /* Color blanco para el formulario */
   padding: 2rem;
@@ -52,17 +60,19 @@
   border-radius: 0.5rem;
   /* Redondeamos los bordes del form */
   text-align: center;
-  align-content: center;
+  align-content: left;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  font-weight: bold; }
+  font-weight: bold;
+  display: grid;
+  column-width: auto;
+  text-shadow: 0 0 9px white; }
 
 input textarea {
   padding: 2px;
   /* Separamos la letra del interior (contenido) en los inputs de los bordes */ }
 
 label {
-  display: block;
   /* Ahora los inputs quedan debajo de los label */
   padding: 2px;
   /* Separando espacios internos */ }
@@ -85,6 +95,57 @@ label {
   50% {
     text-shadow: 0 25px 50px #E5BD83; } }
 
+.textoMap p {
+  margin-top: 7rem;
+  max-width: 100%;
+  max-height: 600px;
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.404);
+  margin: 1rem;
+  display: flex;
+  justify-content: center; }
+
+.mapa {
+  display: grid;
+  max-width: 90%;
+  max-height: 5fr;
+  margin: 5px;
+  padding: 2rem;
+  column-width: auto;
+  align-items: center;
+  justify-items: center; }
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+/* MOBILE LAST  = MAX-WIDTH*/
+@media (max-width: 768px) {
+  .contenedorDeContacto,
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 2;
+    align-items: center; }
+  .textoMap p {
+    font-size: 15px;
+    padding: 0.5rem;
+    text-align: center;
+    max-height: 300px;
+    margin-left: 7rem;
+    margin-right: 140px; } }
+
+/* Dispositivos chicos // SM */
+@media (max-width: 600px) {
+  .contenedorDeContacto,
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 2;
+    align-items: center; }
+  .textoMap p {
+    font-size: 14px;
+    padding: 0.5rem;
+    text-align: center;
+    max-height: 400px; } }
+
 /* Paginas*/
 /* HEADER */
 .grilla {
@@ -104,7 +165,14 @@ label {
   grid-area: header;
   background-color: #E5BD83;
   background-size: auto;
-  padding: 1.5rem; }
+  padding: 1; }
+
+.banner {
+  background: url(/ProyectoHtml/DFnombre.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 345px;
+  align-items: center; }
 
 .titulo {
   font-size: 6rem;
@@ -112,6 +180,18 @@ label {
   text-align: center;
   padding: 4rem;
   color: #E5BD83; }
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+/* MOBILE LAST  = MAX-WIDTH*/
+@media (max-width: 768px) {
+  .banner {
+    max-height: 200px;
+    align-items: center; } }
+
+/* Dispositivos chicos // SM */
+@media (max-width: 600px) {
+  .banner {
+    max-height: 170px; } }
 
 /* MAIN */
 .main {
@@ -136,7 +216,7 @@ label {
 .separator {
   font-size: 2rem;
   text-align: left;
-  background-color: #d6a77b;
+  background-color: #d6a77bc0;
   padding: 0.5rem;
   margin-top: 0px;
   text-align: center; }

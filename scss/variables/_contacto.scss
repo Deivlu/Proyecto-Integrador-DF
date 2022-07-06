@@ -1,0 +1,146 @@
+.mainDeContacto {
+  grid-area: main;
+}
+
+.contenedorDeContacto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-evenly;
+}
+
+/* FORMULARIO */
+
+.formulario {
+  background: url(/..ProyectoHtml/silla.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0 auto;
+  /* Centramos el formulario */
+  max-height: 5fr;
+  max-width: 80%;
+  /* Sin ancho no podemos centrar el formulario */
+  /* Color blanco para el formulario */
+  padding: 2rem;
+  /* separamos los bordes del form del resto de elementos */
+  border-radius: 0.5rem;
+  /* Redondeamos los bordes del form */
+  text-align: center;
+  align-content: left;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  display: grid;
+  column-width: auto;
+  text-shadow: 0 0 9px white
+
+}
+
+input textarea {
+  padding: 2px;
+  /* Separamos la letra del interior (contenido) en los inputs de los bordes */
+}
+
+label {
+  /* Ahora los inputs quedan debajo de los label */
+  padding: 2px;
+  /* Separando espacios internos */
+}
+
+.btn {
+  @include btnForm (white, black)
+}
+
+/* TRANSICIÓN FORMULARIO */
+.formulario :hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+/* ANIMACIONES - KEYFRAMES */
+@keyframes move {
+  0% {
+    transform: translate(-30%);
+  }
+
+  50% {
+    text-shadow: 0 25px 50px #E5BD83;
+  }
+}
+
+.textoMap {
+
+  p {
+    @extend %estiloParrafo;
+    margin-top: 7rem;
+    max-width: 100%;
+    max-height: 600px;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.404);
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.mapa {
+  display: grid;
+  max-width: 90%;
+  max-height: 5fr;
+  margin: 5px;
+  padding: 2rem;
+  column-width: auto;
+  align-items: center;
+  justify-items: center
+}
+
+
+/* RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST */
+
+/* MOBILE LAST  = MAX-WIDTH*/
+@media (max-width:768px) {
+
+  .contenedorDeContacto,
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 2;
+    align-items: center;
+  }
+
+  .textoMap {
+    p {
+      font-size: 15px;
+      padding: 0.5rem;
+      text-align: center;
+      max-height: 300px;
+      margin-left: 7rem;
+      margin-right: 140px;
+
+    }
+  }
+}
+
+/* Dispositivos chicos // SM */
+@media (max-width:600px) {
+
+  .contenedorDeContacto,
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 2;
+    align-items: center;
+  }
+
+  .textoMap {
+    p {
+      font-size: 14px;
+      padding: 0.5rem;
+      text-align: center;
+      max-height: 400px;
+
+    }
+  }
+}
